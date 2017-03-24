@@ -171,6 +171,10 @@ p {
   /* color: #D1C9AA; */
 }
 
+.current-text {
+  padding-right: 3rem;
+}
+
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -427,7 +431,11 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+    .current-text {
+  padding-right: 1rem;
+}
+}
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {}
