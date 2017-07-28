@@ -273,6 +273,7 @@ hr {
   font-size: 1.25rem;
   width: 23rem;
   margin: 3rem auto;
+  opacity: 1;
   animation: pulse linear 2s infinite;
 }
 
@@ -328,7 +329,7 @@ hr {
 }
 
 .braintree h2 {
-  font-family: 'Anonymous Pro', monospace;
+  font-family: "Anonymous Pro", monospace;
   font-size: 3.75rem;
   font-weight: 700;
   padding-right: 12rem;
@@ -375,15 +376,9 @@ hr {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @keyframes pulse {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: .1;
-  }
-  100% {
-    opacity: 1;
-  }
+  0% { opacity: 1; }
+  50% { opacity: .1; }
+  100% { opacity: 1; }
 }
 
 
