@@ -352,6 +352,11 @@ hr {
   line-height: 4.5rem;
 }
 
+.blog-header {
+  text-align: center;
+  font-family: 'PT Serif Caption', serif;
+}
+
 .blog-section p {
   font-size: 1.5rem;
 }
@@ -363,7 +368,7 @@ hr {
 }
 
 .blog-section img {
-  width: 15rem;
+  width: 100%;
 }
 
 .blog-image {
