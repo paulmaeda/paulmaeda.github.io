@@ -273,8 +273,9 @@ hr {
   font-size: 1.25rem;
   width: 23rem;
   margin: 3rem auto;
+  background-color: red;
   opacity: 1;
-  animation: pulse linear 2s infinite;
+  animation: pulse .5s 8.5s ease-in-out;
 }
 
 .marquee--top {

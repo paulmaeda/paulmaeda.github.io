@@ -273,7 +273,6 @@ hr {
   font-size: 1.25rem;
   width: 23rem;
   margin: 3rem auto;
-  opacity: 1;
   animation: pulse linear 2s infinite;
 }
 
@@ -329,7 +328,7 @@ hr {
 }
 
 .braintree h2 {
-  font-family: "Anonymous Pro", monospace;
+  font-family: 'Anonymous Pro', monospace;
   font-size: 3.75rem;
   font-weight: 700;
   padding-right: 12rem;
@@ -352,22 +351,23 @@ hr {
   line-height: 4.5rem;
 }
 
-.blog-section
-  p {
-    font-size: 1.5rem;
-  }
-  h3 {
-    font-weight: 700;
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-  }
-  img {
-    width: 15rem;
-  }
-  .blog-image {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
+.blog-section p {
+  font-size: 1.5rem;
+}
+
+.blog-section h3 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.blog-section img {
+  width: 15rem;
+}
+
+.blog-image {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 
@@ -375,9 +375,15 @@ hr {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @keyframes pulse {
-  0% { opacity: 1; }
-  50% { opacity: .1; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 
