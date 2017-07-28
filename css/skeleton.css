@@ -123,6 +123,7 @@ body {
   font-weight: 400;
   color: #333;
   background-color: #F5F5F0;
+  padding-top: 8rem;
 }
 
 .text-right {
@@ -266,13 +267,16 @@ hr {
 /* Homepage
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .message {
+  position: fixed;
+  left: 40%;
+  top: 5%;
+  z-index: 99;
   border: solid 1px #9B905F;
   color: #9B905F;
   padding: 5px 7px;
   text-align: center;
   font-size: 1.25rem;
-  width: 23rem;
-  margin: 3rem auto;
+  width: 20%;
   opacity: 1;
   animation: pulse linear 2s infinite;
 }
@@ -307,9 +311,7 @@ hr {
 }
 
 .interview-thumb {
-  width: 420px;
-  position: absolute;
-  right: 0;
+  width: 100%;
 }
 
 .feature-section .two-thirds {
@@ -352,8 +354,9 @@ hr {
   line-height: 4.5rem;
 }
 
-.blog-header {
+.blog-section .blog-header {
   text-align: center;
+  font-size: 1.75rem;
   font-family: 'PT Serif Caption', serif;
 }
 
