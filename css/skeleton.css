@@ -27,9 +27,8 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
   box-sizing: border-box; }
 .column,
 .columns {
@@ -40,14 +39,14 @@
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
-    width: 85%;
+    width: 90%;
     padding: 0; }
 }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 80%; }
+    width: 90%; }
   .column,
   .columns {
     margin-left: 4%; }
@@ -144,10 +143,31 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-family: 'PT Serif Caption', serif;
-  font-size: 7rem;
   font-weight: 400;
-  line-height: 7rem;
   letter-spacing: 0;
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+    }
+  }
+
+  /* Larger than mobile */
+@media (min-width: 400px) {
+    .current-text {
+  padding-right: 1rem;
+}
 }
 
 /* Larger than phablet
@@ -407,18 +427,9 @@ there.
 }
 }
 
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
-  h1 {
-    font-size: 5rem;
-  }
 
-/* Larger than tablet */
-@media (min-width: 750px) {
-  h1 {
-    font-size: 7rem;
-  }
-}
+
+
 
 /* Larger than desktop */
 @media (min-width: 1000px) {}
