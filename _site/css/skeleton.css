@@ -39,7 +39,7 @@
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
-    width: 95%;
+    width: 90%;
     padding: 0; }
 }
 
@@ -310,6 +310,14 @@ hr {
   position: relative;
 }
 
+.aloha {
+  margin-bottom: 0;
+}
+
+.north-shore-text {
+  margin-top: 0;
+}
+
 .marquee--top .title-name {
   font-size: 1.5rem;
   font-weight: 500;
@@ -404,7 +412,6 @@ hr {
 .blog-image {
   text-align: center;
   margin-bottom: 3rem;
-  padding: 0rem 7rem;
 }
 
 
