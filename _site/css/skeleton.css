@@ -125,10 +125,6 @@ body {
   padding-top: 8rem;
 }
 
-.text-right {
-  text-align: right;
-}
-
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
@@ -334,7 +330,16 @@ hr {
   margin-top: 0;
   margin-bottom: 1.125rem;
   padding-right: 0;
+  text-align: right;
 }
+
+@media (max-width: 550px) {
+  .marquee--top .text--social {
+    text-align: left;
+    display: inline-block;
+    margin: 3rem 0;
+    }
+  }
 
 .profile-image {
   position: absolute;
@@ -344,6 +349,12 @@ hr {
   border-radius: 100px;
   box-shadow:0px 0px 20px #E8E8E4;
 }
+
+@media (max-width: 550px) {
+  .profile-image {
+    position: relative;
+    }
+  }
 
 .interview-thumb {
   width: 100%;
@@ -416,6 +427,10 @@ hr {
 
 .title--design {
   font-family: 'Montserrat', sans-serif;
+}
+
+.text--light {
+  opacity: .3;
 }
 
 
