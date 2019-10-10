@@ -37,16 +37,10 @@
   box-sizing: border-box; }
 
 /* For devices larger than 400px */
-@media (min-width: 400px) {
-  .container {
-    width: 90%;
-    padding: 0; }
-}
+
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
-  .container {
-    width: 95%; }
   .column,
   .columns {
     margin-left: 4%; }
@@ -116,13 +110,13 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%; }
 body {
-  font-family: 'PT Serif', serif;
+  font-family: 'Prata', serif;
   font-size: 1.75em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
   color: #333;
   background-color: #F5F5F0;
-  padding-top: 8rem;
+  padding: 5rem;
 }
 
 /* Typography
@@ -133,9 +127,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-family: 'PT Serif Caption', serif;
+  font-family: 'Prata', serif;
   font-size: 4rem;
-  line-height: 4.5rem;
+  line-height: 5rem;
   font-weight: 400;
   letter-spacing: 0;
 }
@@ -144,7 +138,7 @@ h1 {
 @media (min-width: 550px) {
   h1 {
     font-size: 5rem;
-    line-height: 5.5rem;
+    line-height: 6rem;
     }
   }
 
@@ -152,7 +146,7 @@ h1 {
 @media (min-width: 750px) {
   h1 {
     font-size: 6rem;
-    line-height: 6.5rem;
+    line-height: 7rem;
   }
 }
 
@@ -165,11 +159,6 @@ h1 {
   h5 { font-size: 2.4rem; }
   h6 { font-size: 1.5rem; }
 } */
-
-.text--small {
-  font-size: 1.25rem;
-}
-
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -264,15 +253,6 @@ form {
   float: left; }
 
 
-/* Misc
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-hr {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  border-width: 0;
-  border-top: 1px solid #9B905F; }
-
-
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -287,162 +267,13 @@ hr {
 
 /* Homepage
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.message {
-  position: fixed;
-  left: 40%;
-  top: 5%;
-  z-index: 99;
-  border: solid 1px #9B905F;
-  color: #9B905F;
-  padding: 5px 7px;
-  text-align: center;
-  font-size: 1.25rem;
-  width: 20%;
-  opacity: 1;
-  animation: pulse linear 2s infinite;
-}
-
-.marquee--top {
-  position: relative;
-}
-
-.aloha {
-  margin-bottom: 0;
-}
-
-.north-shore-text {
-  margin-top: 0;
-}
-
-.marquee--top .title-name {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin-bottom: 2.5rem;
-  margin-top: 0;
-  text-transform: uppercase;
-}
-
-.marquee--top p {
-  margin-bottom: 0;
-}
-
-.marquee--top .text--social {
-  margin-top: 0;
-  margin-bottom: 1.125rem;
-  padding-right: 0;
-  text-align: right;
-}
-
-@media (max-width: 550px) {
-  .marquee--top .text--social {
-    text-align: left;
-    display: inline-block;
-    margin: 3rem 0;
-    }
-  }
 
 .profile-image {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100px;
+  width: 80px;
   border-radius: 100px;
   box-shadow:0px 0px 20px #E8E8E4;
+  margin-bottom: 2rem;
 }
-
-@media (max-width: 550px) {
-  .profile-image {
-    position: relative;
-    }
-  }
-
-.interview-thumb {
-  width: 100%;
-}
-
-.feature-section .two-thirds {
-  padding-right: 20rem;
-}
-
-.feature-section .label {
-  margin-top: 0;
-  text-transform: uppercase;
-  font-size: 1.25rem;
-  color: #9B905F;
-  letter-spacing: 1px;
-}
-
-.feature-section h2 {
-  margin-bottom: 1.5rem;
-}
-
-.braintree h2 {
-  font-family: "Anonymous Pro", monospace;
-  font-size: 3.75rem;
-  font-weight: 700;
-  padding-right: 12rem;
-  line-height: 4.25rem;
-}
-
-.isesaki h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  font-size: 3.5rem;
-  padding-right: 21rem;
-  line-height: 4.25rem;
-}
-
-.graphic h2 {
-  font-family: 'Merriweather', serif;
-  font-weight: 400;
-  font-size: 3.25rem;
-  padding-right: 21rem;
-  line-height: 4.5rem;
-}
-
-.blog-section .blog-header {
-  text-align: center;
-  font-size: 1.75rem;
-  font-family: 'PT Serif Caption', serif;
-}
-
-.blog-section p {
-  font-size: 1.5rem;
-}
-
-.blog-section h3 {
-  font-weight: 700;
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-}
-
-.blog-section img {
-  width: 100%;
-}
-
-.blog-image {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.title--design {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.text--light {
-  opacity: .3;
-}
-
-
-/* Animations
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-@keyframes pulse {
-  0% { opacity: 1; }
-  50% { opacity: .1; }
-  100% { opacity: 1; }
-}
-
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
